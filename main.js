@@ -23,10 +23,11 @@ const searchMovie = async (event) => {
 
 const showMovies = (movieList) => {
     moviesContainer.innerHTML = '' //inicializo y limpio cada vez que ejecute showMovies...
+    //https://image.tmdb.org/t/p/w440_and_h660_face/
     movieList.forEach((elemento_movie) => {
     moviesContainer.innerHTML += `
         <div class="card col-lg-3 col-xs-12 col-md-6 m-2">
-        <img src="${elemento_movie.poster_path}" alt="${elemento_movie.title}">
+        <img src="https://image.tmdb.org/t/p/w220_and_h330_face/${elemento_movie.poster_path}" alt="${elemento_movie.title}">
         <div class="card-body">
         <h3 class="card-header">${elemento_movie.title}</h3>
         <h5 class="card-title">${elemento_movie.vote_average}</h5>
