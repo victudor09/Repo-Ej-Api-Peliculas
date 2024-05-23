@@ -8,7 +8,7 @@ const formSearch = document.getElementById('form')
 const searchInput = document.getElementById('searchId')
 
 const searchMovie = async (event) => {
-    event.preventDefault()
+    event.preventDefault() 
     try {
         const search = searchInput.value
         const res = await axios.get(`${API_URL}${search}&api_key=${apiKey}`)
