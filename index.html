@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>API películas</h1>
+        <div class="form-group">
+        <h2>Busca aquí tu pelicula</h2>
+        </div>
+        
+        <form id="form" class="form-group">
+            <input
+            type="search"
+            class="form-control"
+            id="searchId"
+            placeholder="buscar"
+            />
+            <input type="submit" value="Buscar Pelicula" 
+        class="btn btn-primary" />
+        </form>
+
+        <section id="movieNames" class="d-flex flex-wrap"></section>
+    </div>
+</body>
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de películas</title>
+       
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+</head>
+<body>
+    <form id="search-form">
+        <input type="text" id="search-input" placeholder="Busca una película...">
+        <button type="submit">Buscar</button>
+    </form>
+    <ul id="movie-list"></ul>
+</body>
+</html> -->
